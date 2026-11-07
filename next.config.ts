@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  outputFileTracingIncludes: { "/api/evidence/ap/[id]": ["./data/**/*"] },
   turbopack: {
     rules: {
       "*.css": {
